@@ -2,8 +2,8 @@ import os
 os.system('cls || clear')
 media = input
 nome = str(input('Digite seu nome'))
-nota1 = int(input('Digite o primeiro número'))
-nota2 = int(input('Digite o segundo número'))
+nota1 = int(input('Digite a primeira nota'))
+nota2 = int(input('Digite a segunda nota'))
 
 media = (nota1 + nota2)/2
 
