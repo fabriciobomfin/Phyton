@@ -1,26 +1,21 @@
-#faça um pograma que imprime a tabuada de um número informado pelo usuário de 1 a 10 utilizando uma função para exibir o resultado.
 import os
-
 
 # Função sem retorno.
 def logoSenai():
-    os.system("cls || clear") #apar terminal
+    os.system("cls || clear") # limpar terminal
     print("=== ===== ===")
     print("=== SENAI ===")
     print("=== ===== ===")
 
-#Solicitando dados para o úsuario.
-logoSenai()
-nome = input("Digite seu nome: ")
+def mostrar_tabuada(numero):
+    for i in range(10):
+        print(f"{numero} x {i+1} = {numero * (i+1)}")  # Corrigindo a operação de multiplicação
 
+# Solicitando dados para o usuário.
 logoSenai()
-idade = int(input("Digite sua iadade: "))
+numero = int(input("Digite um número: "))  # Convertendo a entrada do usuário para um número inteiro
 
+# Exibindo dados para o usuário
 logoSenai()
-peso = float(input("Digite seu peso: "))
-
-#Exibindo dados para o usuário
-logoSenai()
-print(f"Nome: {nome}")
-print(f"Idade: {idade}")
-print(f"Peso: {peso:.2f}")
+print("Tabuada:")
+mostrar_tabuada(numero)  # Chamar a função corretamente
