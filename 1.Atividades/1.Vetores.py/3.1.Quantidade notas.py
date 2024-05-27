@@ -17,7 +17,7 @@ for i in range(QUANTIDADES_NOTAS):
     nota = float(input("Digite uma nota: "))
     notas.append(nota)
 
- # Apagar o terminal.
+os.system("cls || clear")# Apagar terminal
 
 # Encontrar o menor e o maior número
 menor = min(notas)

@@ -1,33 +1,27 @@
-
 import os
 os.system("cls || clear")
 
-#criando uma constante
-QUANTIDADES_NOTAS = 3
+# Criando uma constante para a quantidade de notas
+QUANTIDADE_NOTAS = 3
 
-# criando uma lista /vetor.
-
+# Criando uma lista para armazenar as notas
 notas = []
-#soma = 0
-# criando uma lista / vetor.
-for i in range(QUANTIDADES_NOTAS):
+
+# Recebendo as notas do usuário
+for i in range(QUANTIDADE_NOTAS):
     nota = float(input("Digite uma nota: "))
     notas.append(nota)
-  
-media = sum(notas) / QUANTIDADES_NOTAS
 
-# exibindo as notas para o úsuario
-for i in range(QUANTIDADES_NOTAS):
-    print(f"Nota: {notas[i]}")
+# Calculando a média das notas
+media = sum(notas) / QUANTIDADE_NOTAS
 
-# ForEach
+# Exibindo as notas para o usuário
+for i in range(QUANTIDADE_NOTAS):
+    print(f"Nota {i + 1}: {notas[i]}")
+
+# Exibindo as notas usando um loop ForEach
 for nota in notas:
-    print(f"Notas: {nota}")
+    print(f"Nota: {nota}")
 
-    
-
-
-
-
-
-
+# Exibindo a média das notas
+print(f"Média das notas: {media:.2f}")
