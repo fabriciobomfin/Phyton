@@ -1,16 +1,20 @@
 import os
 os.system("cls || clear")
 
-#constante
-DUAS_NOTAS = 2
+#CONSTANTE
+DOIS_NUMEROS = 2
 
-#lista
+#LISTA
 notas = []
 
-#recebendo as notas
-for i in range(DUAS_NOTAS):
-    nota = float(input("Digite uma nota: \n"))
-    notas.append(nota)
+#pedindo informação
+for i in range(DOIS_NUMEROS):
+    numero = float(input("Digite um número. \naqui: "))
+    os.system("cls || clear")
+    notas.append(numero)
 
-#media
-media = sum(notas) / DUAS_NOTAS
+    media = sum(notas) / DOIS_NUMEROS
+
+for i in range(DOIS_NUMEROS):
+   print(f"Notas inseridas:{notas[i]}")
+    
