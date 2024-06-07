@@ -3,36 +3,27 @@ import os
 # Limpar terminal.
 os.system("cls || clear")
 
-# Inicializando variável.
-resultado = "Dia útil"
-dia_da_semana = ""
+def cab ():
+    os.system ("cls || clear")
 
-while True:
-    os.system("cls || clear")
+opcao = int (input (" 1 = pagamento a vista  e  2 = pagamento a prazo: \n => "))
+valor = int (input ("valor do produto: \n ==> "))
 
-    # Solicitar dados para o usuário.
-    ("Digite um número para o dia da semana: "))
-
-    match(dia):
-        case 1:
-            dia_da_semana ="Picanha"
-            
-            break
-        case 2:
-            dia_da_semana ="Lasanha"
-            break
-        case 3:
-            dia_da_semana ="Strogonoff"
-            break
-        case 4:
-            dia_da_semana ="Bife Acebalodo"
-            break
-        case 5:
-            dia_da_semana ="Pão com ovo"
-            break
-        case _:
-            input("Código inválido!")
-   
-if resultado:
-    print(f"Dia da semana: {dia_da_semana}")
-    print(f"Resutado: {resultado}")
+cab ()
+match(opcao):
+    case 1:
+        desconto = valor * 0.10
+        resultado = valor - desconto
+        print (f"forma de pagamento- á vista")
+        print (f"valor do produto: {valor}")
+        print (f"valor do desconto: {desconto}")
+        print (f"valor do produto: {resultado}")
+    case 2:
+        parcela = int (input("quantidade de parcela ? \n ==> "))
+        os.system ("cls || clear")
+        valorParcela = valor / parcela
+        print ("valor R$ - 100")
+        print (f"forma de pagamento: á prazo")
+        print (f"valor total a prazo : {valor}")
+        print (f"quantidade de parcela: {parcela}")
+        print (f"valor da parcela: {valorParcela}")

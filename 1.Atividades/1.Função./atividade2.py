@@ -9,7 +9,7 @@ def logoSenai():
 
 def mostrar_tabuada(numero):
     for i in range(10):
-        print(f"{numero} x {i+1} = {numero * (i+1)}")  # Corrigindo a operação de multiplicação
+        print(f"{numero} x {i+1} = {numero * (i+1)}")  #  operação de multiplicação
 
 # Solicitando dados para o usuário.
 logoSenai()

@@ -2,17 +2,17 @@ import os
 
 # Função sem retorno.
 def logoSenai():
-    os.system("cls || clear") #apar terminal
-    print("=== ===== ===")
-    print("=== SENAI ===")
-    print("=== ===== ===")
+    os.system("cls || clear") #apagar terminal
+    print('=' * 30)
+    print("---------- SENAI -------------")
+    print('=' * 30)
 
 #Solicitando dados para o úsuario.
 logoSenai()
 nome = input("Digite seu nome: ")
 
 logoSenai()
-idade = int(input("Digite sua iadade: "))
+idade = int(input("Digite sua idade: "))
 
 logoSenai()
 peso = float(input("Digite seu peso: "))

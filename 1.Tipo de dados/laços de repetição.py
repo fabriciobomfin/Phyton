@@ -25,7 +25,7 @@ for i in range (1,11):
 
 #Escreva um programa de computador que solicite do usuário 5 números inteiros e, ao final, apresente a soma de todos os números lidos.
 
-    '''soma = 0
+    '''==soma = 0
     
     for i in range(5):
         numero = int(input(f"Digite o {i+1}º número inteiro: "))
